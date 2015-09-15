@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var env = app.get('env') == 'development' ? 'dev' : app.get('env');
 var port = process.env.PORT || 8080;
 
-
+/*
 // IMPORT MODELS
 // =============================================================================
 // db config
@@ -16,7 +16,7 @@ var config = require('./database.json')[env];
 var password = config.password ? config.password : null;
 
 // initialize database connection
-/*var Sequelize = require('sequelize')
+var Sequelize = require('sequelize')
 	, sequelize = new Sequelize(
 	config.database,
 	config.user,
